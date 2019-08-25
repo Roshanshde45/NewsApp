@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RecyclerViewPractice</string>
+    <string name="randomText">RandomText is a tool designers and developers can use to quickly grab dummy text in either Lorem Ipsum or Gibberish format.
+
+There are a number of features that make RandomText a little different from other Lorem Ipsum dummy text generators you may find around the web....</string>
+    <string name="createText"><u>Create new Account!</u></string>
+</resources>

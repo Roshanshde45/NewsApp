@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:background="#00d2d3"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".CreateAccountActivity">
+
+    <ImageView
+        android:onClick="moveback"
+        android:layout_width="49dp"
+        android:layout_height="45dp"
+        android:background="#00d2d3"
+        android:src="@drawable/ic_back_button" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="209dp"
+        android:src="@drawable/applogo1" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="5dp"
+        >
+
+        <EditText
+            android:drawableStart="@drawable/ic_person"
+            android:drawablePadding="7dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/usernameAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:autofillHints="name"
+            android:backgroundTint="@android:color/white"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        >
+
+        <EditText
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="7dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/emailAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email ID"
+            android:inputType="textEmailAddress"
+            android:autofillHints="Email ID"
+            android:backgroundTint="@android:color/white"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        >
+
+        <EditText
+            android:drawableStart="@drawable/ic_lock"
+            android:drawablePadding="7dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/passwordAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:autofillHints="Password"
+            android:backgroundTint="@android:color/white"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/createAccountButton"
+        android:layout_margin="30dp"
+        android:letterSpacing="0.1"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:background="@android:color/holo_red_light"
+        android:layout_height="wrap_content"
+        android:text="create Account"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="30dp"/>
+
+</LinearLayout>
